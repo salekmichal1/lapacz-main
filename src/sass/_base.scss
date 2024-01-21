@@ -1,0 +1,80 @@
+:root {
+  --coolor-red: #e30613;
+  --coolor-green: #08793d;
+  --coolor-light: #fff;
+  --coolor-dark: #000;
+}
+
+$rwd-xlarge: 100em; //1600px
+$rwd-large: 90em; //1440px
+$rwd-medium: 64em; //1024px
+$rwd-small: 48em; //768px
+$rwd-mobile: 30em; //480px
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('./assets/fonts/Gotham-Bold.otf') format('OpenType');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Gotham Rounded';
+  src: url('./assets/fonts/Gotham-Rounded-Regular.otf') format('OpenType');
+  font-weight: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px
+  scroll-behavior: smooth;
+}
+
+body {
+  display: none;
+  font-size: 1.6rem;
+  font-family: 'Gotham';
+  color: var(--coolor-light);
+  background-image: url(/src/assets/img/tree.png),
+    radial-gradient(
+      61.07% 61.07% at 50% 50%,
+      #47ac34 0%,
+      rgba(71, 172, 52, 0) 100%
+    );
+  background-color: #0e4321;
+}
+
+@keyframes going-up {
+  0% {
+    top: 200%;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    top: -200%;
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    margin-right: 4rem;
+  }
+  50% {
+    margin-left: 4rem;
+  }
+  100% {
+    margin-right: 4rem;
+  }
+}

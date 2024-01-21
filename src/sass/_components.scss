@@ -1,0 +1,460 @@
+//////////////////////////////////////////
+/// Emotes
+
+.emotes {
+  position: relative;
+
+  @media only screen and (min-width: $rwd-medium) {
+    display: none;
+  }
+
+  &__phone {
+    max-width: 30rem;
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__emote {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+
+  &--star {
+    width: 4rem;
+    transform: translateX(-15rem) translateY(-16rem);
+  }
+
+  &--ball {
+    width: 4rem;
+    transform: translateX(-16rem) translateY(-9rem) rotate(340deg);
+  }
+
+  &--bell {
+    width: 6.5rem;
+    transform: translateX(-21rem) translateY(-2rem);
+  }
+
+  &--love-tracer {
+    width: 16rem;
+    transform: translateX(-19rem) translateY(2rem);
+  }
+
+  &--happy-tracer {
+    width: 10rem;
+    transform: translateX(10rem) translateY(-10rem);
+  }
+
+  &--santa {
+    width: 4.5rem;
+    transform: translateX(15rem) translateY(-1rem);
+    filter: blur(4px);
+  }
+
+  &--kiss {
+    width: 5rem;
+    transform: translateX(13rem) translateY(10rem) rotate(20deg);
+  }
+
+  &--animation-one {
+    animation: going-up ease-in forwards 2000ms, wiggle ease-in-out 2 1000ms;
+  }
+
+  &--animation-two {
+    animation: going-up ease-in forwards 3000ms, wiggle ease-in-out 2 1500ms;
+  }
+
+  &--animation-three {
+    animation: going-up ease-in forwards 4000ms, wiggle ease-in-out 2 2000ms;
+  }
+}
+
+.emotes-desktop {
+  position: relative;
+  display: none;
+  @media only screen and (min-width: $rwd-medium) {
+    display: block;
+  }
+
+  &__phone {
+    max-width: 55rem;
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__emote {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: none;
+
+    @media only screen and (min-width: $rwd-medium) {
+      display: block;
+    }
+  }
+
+  &--star {
+    width: 8rem;
+    transform: translateX(46rem);
+  }
+
+  &--ball {
+    width: 6rem;
+    transform: translateX(-40rem) translateY(-32rem) rotate(-40deg);
+  }
+
+  &--sweet {
+    width: 7rem;
+    transform: translateX(20rem) translateY(-20rem);
+  }
+
+  &--bell {
+    width: 7rem;
+    transform: translateX(34rem) translateY(-30rem);
+  }
+
+  &--kiss-tracer {
+    width: 12rem;
+    transform: translateX(18rem) translateY(-2rem);
+  }
+
+  &--happy-1 {
+    width: 6rem;
+    transform: translateX(32rem) translateY(-4rem) rotate(-30deg);
+    filter: blur(3px);
+  }
+
+  &--love-tracer-1 {
+    width: 26rem;
+    transform: translateX(-40rem);
+    z-index: 3;
+  }
+
+  &--kiss-1 {
+    width: 7rem;
+    transform: translateX(-20rem) translateY(20rem) rotate(-20deg);
+  }
+
+  &--shy-1 {
+    width: 10rem;
+    transform: translateX(18rem) translateY(16rem) rotate(20deg);
+  }
+
+  &--love-tracer-2 {
+    width: 16rem;
+    transform: translateX(52rem) translateY(10rem) rotateY(180deg);
+  }
+
+  &--kiss-2 {
+    width: 20rem;
+    transform: translateX(-103rem) translateY(-6rem) rotate(-16deg);
+    filter: blur(6px);
+  }
+
+  &--happy-2 {
+    width: 10rem;
+    transform: translateX(-94rem) translateY(-24rem) rotate(10deg);
+  }
+
+  &--happy-3 {
+    width: 6rem;
+    transform: translateX(-78rem) rotate(-20deg);
+  }
+
+  &--happy-4 {
+    width: 10rem;
+    transform: translateX(-60rem) translateY(6rem) rotate(-20deg);
+  }
+
+  &--santa-1 {
+    width: 8rem;
+    transform: translateX(-50rem) translateY(-16rem);
+    filter: blur(4px);
+  }
+
+  &--shy-2 {
+    width: 8rem;
+    transform: translateX(-66rem) translateY(-10rem);
+  }
+
+  &--christmas-tree-1 {
+    width: 10rem;
+    transform: translateX(-80rem) translateY(16rem);
+  }
+
+  &--shy-3 {
+    width: 12rem;
+    transform: translateX(50rem) translateY(-24rem) rotate(-20deg);
+    filter: blur(4px);
+  }
+
+  &--santa-2 {
+    width: 7rem;
+    transform: translateX(76rem) translateY(-24rem) rotate(-40deg);
+  }
+
+  &--gift-green-1 {
+    width: 7rem;
+    transform: translateX(66rem) translateY(-4rem);
+  }
+
+  &--love-1 {
+    width: 25rem;
+    transform: translateX(82rem) translateY(-14rem) rotateY(180deg);
+    filter: blur(10px);
+  }
+
+  &--animation-one {
+    animation: going-up ease-in forwards 2000ms, wiggle ease-in-out 2 1000ms;
+  }
+
+  &--animation-two {
+    animation: going-up ease-in forwards 3000ms, wiggle ease-in-out 2 1500ms;
+  }
+
+  &--animation-three {
+    animation: going-up ease-in forwards 4000ms, wiggle ease-in-out 2 2000ms;
+  }
+}
+
+//////////////////////////////////////////
+/// Rules
+
+.rules-header {
+  text-align: center;
+  font-size: 2.3rem;
+  margin-bottom: 1.5rem;
+
+  @media only screen and (min-width: $rwd-medium) {
+    font-size: 3rem;
+  }
+
+  @media only screen and (min-width: $rwd-large) {
+    font-size: 4rem;
+  }
+}
+
+.rule {
+  padding-top: 1.5rem;
+  text-align: center;
+
+  @media only screen and (min-width: $rwd-medium) {
+    font-size: 2.6rem;
+  }
+
+  @media only screen and (min-width: $rwd-large) {
+    padding-top: 4rem;
+    font-size: 3rem;
+  }
+
+  &__point {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.3rem;
+    margin-bottom: 1.5rem;
+    background-color: var(--coolor-red);
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media only screen and (min-width: $rwd-medium) {
+      width: 8rem;
+      height: 8rem;
+      font-size: 4.4rem;
+    }
+  }
+
+  &__description--bold {
+    font-size: 1.9rem;
+    margin-bottom: 0.5rem;
+
+    @media only screen and (min-width: $rwd-medium) {
+      font-size: 3rem;
+    }
+
+    @media only screen and (min-width: $rwd-large) {
+      font-size: 4rem;
+    }
+  }
+}
+
+//////////////////////////////////////////
+/// Products / Slider
+
+.products-header {
+  font-size: 1.7rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+
+  @media only screen and (min-width: $rwd-mobile) {
+    margin-bottom: 3rem;
+  }
+
+  @media only screen and (min-width: $rwd-medium) {
+    font-size: 3rem;
+  }
+
+  @media only screen and (min-width: $rwd-large) {
+    font-size: 4rem;
+  }
+}
+
+.swiper-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+
+  @media only screen and (min-width: $rwd-mobile) {
+    width: 80%;
+  }
+
+  @media only screen and (min-width: $rwd-small) {
+    width: 90%;
+  }
+
+  @media only screen and (min-width: $rwd-large) {
+    width: 100%;
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  background: #fff;
+  height: calc((100% - 3rem) / 2) !important;
+  color: var(--coolor-dark);
+  font-family: 'Lato', sans-serif;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  &__product {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__description {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 8rem;
+
+    @media only screen and (min-width: $rwd-medium) {
+      margin-bottom: 12rem;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 1.4rem;
+
+    @media only screen and (min-width: $rwd-small) {
+      font-size: 1.6rem;
+    }
+
+    @media only screen and (min-width: $rwd-large) {
+      font-size: 2rem;
+    }
+  }
+
+  &__detail {
+    font-size: 1.1rem;
+
+    @media only screen and (min-width: $rwd-small) {
+      font-size: 1.4rem;
+    }
+
+    @media only screen and (min-width: $rwd-large) {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.mySwiper .swiper-pagination {
+  margin-top: 2rem;
+  position: relative;
+
+  @media only screen and (min-width: $rwd-small) {
+    display: none;
+  }
+}
+
+.mySwiper .swiper-pagination-bullet {
+  background: transparent;
+  border: 2px solid var(--coolor-light);
+  opacity: 1;
+  width: 1rem;
+  height: 1rem;
+}
+
+.mySwiper .swiper-pagination-bullet-active {
+  background-color: var(--coolor-light);
+}
+
+.swiper-container [class^='swiper-button-']::after {
+  font-size: 6rem;
+  color: var(--coolor-light);
+
+  @media only screen and (min-width: $rwd-large) {
+    font-size: 12rem;
+    line-height: 0.4;
+  }
+}
+
+.swiper-container .swiper-button-prev {
+  display: none;
+  left: -5rem;
+
+  @media only screen and (min-width: $rwd-small) {
+    display: block;
+  }
+
+  @media only screen and (min-width: $rwd-large) {
+    left: -8.5rem;
+  }
+}
+.swiper-container .swiper-button-next {
+  display: none;
+  right: -5rem;
+
+  @media only screen and (min-width: $rwd-small) {
+    display: block;
+  }
+}
+
+//////////////////////////////////////////
+/// Regulations
+
+.regulation {
+  text-align: center;
+  font-family: 'Gotham Rounded';
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  font-weight: normal;
+
+  &:nth-last-child(1) {
+    margin-bottom: unset;
+  }
+
+  @media only screen and (min-width: $rwd-medium) {
+    font-size: 2rem;
+  }
+
+  &--upper-index {
+    font-size: 1rem;
+  }
+}
